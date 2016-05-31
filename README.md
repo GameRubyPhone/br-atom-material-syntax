@@ -1,5 +1,5 @@
-# atom-br-syntax theme
+# Built by Robots - Atom Material Syntax
 
-A short description of your theme.
+A variation of the Atom Material Syntax by Built by Robots.
 
-![A screenshot of your theme](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)
+![screenshot](http://f.cl.ly/items/0g3D1o1P1d2b1c0z0p2E/Screen%20Shot%202016-05-30%20at%206.57.22%20PM.png)
