@@ -1,0 +1,61 @@
+atom-panel-container {
+    .tree-view {
+        &:focus {
+            li.directory.selected {
+                &.status-modified > .list-item {
+                    color: darken(@yellow, 30%);
+                    &::after {
+                        background-color: lighten(desaturate(@yellow, 25%), 5%);
+                    }
+                }
+                &.status-added > .list-item {
+                    color: @white;
+                    &::after {
+                        background-color: @green;
+                    }
+                }
+                &.status-renamed > .list-item {
+                    color: @white;
+                    &::after {
+                        background-color: @blue;
+                    }
+                }
+                &.status-removed > .list-item {
+                    color: @white;
+                    &::after {
+                        background-color: @red;
+                    }
+                }
+            }
+            li.list-nested-item > .list-item,
+            li:not(.list-nested-item) {
+                &.selected {
+                    &.status-modified {
+                        color: darken(@yellow, 30%);
+                        &::before {
+                            background-color: lighten(desaturate(@yellow, 25%), 5%);
+                        }
+                    }
+                    &.status-added {
+                        color: @white;
+                        &::before {
+                            background-color: @green;
+                        }
+                    }
+                    &.status-renamed {
+                        color: @white;
+                        &::before {
+                            background-color: @blue;
+                        }
+                    }
+                    &.status-removed {
+                        color: @white;
+                        &::before {
+                            background-color: @red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

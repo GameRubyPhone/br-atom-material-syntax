@@ -1,0 +1,32 @@
+atom-panel-container {
+  .list-tree, .list-group {
+      li:not(.list-nested-item):not(.tabBlender), li.list-nested-item > .list-item {
+          &.status-modified {
+              color: desaturate(@yellow, 15%);
+          }
+          &.status-added {
+              color: @green;
+          }
+          &.status-renamed {
+              color: @blue;
+          }
+          &.status-removed {
+              color: @red;
+          }
+      }
+      li.list-nested-item {
+          &.status-modified:not(.selected) > .list-item {
+              color: lighten(desaturate(@yellow, 25%), 5%);
+          }
+          &.status-added:not(.selected) > .list-item {
+              color: @green;
+          }
+          &.status-renamed:not(.selected) > .list-item {
+              color: @blue;
+          }
+          &.status-removed:not(.selected) > .list-item {
+              color: @red;
+          }
+      }
+  }
+}
