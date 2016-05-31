@@ -1,9 +1,9 @@
 [data-grammar*="gfm"]::shadow {
     .markup.underline.link {
-        color: lighten(#ff5370, 10%);
+        color: lighten(@red, 10%);
 
         span.punctuation {
-            color: #ff5370;
+            color: @red;
         }
     }
     .markup.strike {
@@ -24,14 +24,14 @@
         color: fade(@syntax-text-color, 50%);
     }
     .markup.heading {
-        color: #82b1ff;
+        color: @blue;
     }
     .punctuation.definition.begin,
     .punctuation.definition.end {
-        color: #82b1ff;
+        color: @blue;
     }
     .punctuation.definition.begin + span:not(.function.parameter) {
-        color: lighten(#82b1ff, 5%);
+        color: lighten(@blue, 5%);
     }
 }
 .bracket-matcher .region {
@@ -49,38 +49,38 @@ atom-text-editor.is-focused .selection .region,
 }
 .variable {
     &.instance, &.instance > * {
-        color: #ff5370;
+        color: @magenta;
     }
 }
 .meta {
     &.delimiter.period {
-        color: #c792ea;
+        color: @purple;
     }
     &.brace {
-        color: #89DDFF;
+        color: @cyan;
     }
     &.tag.doctype {
-        color: #c792ea;
+        color: @purple;
     }
     .string.quoted {
-        color: #C3E88D;
+        color: @green;
     }
     &.array.json .string.quoted {
-        color: #80CBC4;
+        color: @cyan;
 
         > * {
             color: currentColor;
         }
     }
     .punctuation.separator.key-value + .string.quoted {
-        color: #80CBC4;
+        color: @cyan;
 
         * {
             color: currentColor;
         }
     }
     &.structure.dictionary .string.quoted {
-        color: #C3E88D;
+        color: @green;
 
         .punctuation.string {
             color: currentColor;
@@ -88,12 +88,12 @@ atom-text-editor.is-focused .selection .region,
     }
 }
 .support.constant {
-    color: #89DDFF;
+    color: @cyan;
 }
 .keyword {
     &.operator {
         &.logical, &.comparison, &.assignment {
-            color: #c792ea;
+            color: @purple;
         }
     }
 }

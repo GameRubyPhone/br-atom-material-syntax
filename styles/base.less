@@ -56,7 +56,7 @@ atom-text-editor.is-focused .line.cursor-line,
     background-color: rgba(0, 0, 0, 0.19);
 }
 .variable.parameter.function {
-    color: white;
+    color: @magenta;
 }
 .comment,
 .punctuation.definition.comment,
@@ -66,7 +66,7 @@ atom-text-editor.is-focused .line.cursor-line,
     color: @syntax-comment-color;
 }
 .notes {
-    color: @grey;
+    color: @blue;
 }
 .text,
 .source {
@@ -77,19 +77,19 @@ atom-text-editor.is-focused .line.cursor-line,
 .punctuation.definition.parameters,
 .punctuation.definition.string,
 .punctuation.definition.array {
-    color: @green;
+    color: @cyan;
 }
 .none {
-    color: @green;
+    color: @grey;
 }
 .keyword.operator {
-    color: @magenta;
+    color: @purple;
 }
 .keyword {
-    color: @magenta;
+    color: @purple;
 }
 .variable {
-    color: @purple;
+    color: @magenta;
 }
 .entity.name.function,
 .meta.require,
@@ -115,7 +115,7 @@ atom-text-editor.is-focused .line.cursor-line,
     color: @blue;
 }
 .storage {
-    color: @magenta;
+    color: @purple;
 }
 .support.function,
 .keyword.operator,
@@ -166,7 +166,7 @@ atom-text-editor.is-focused .line.cursor-line,
     color: @yellow;
 }
 .meta.selector {
-    color: @magenta;
+    color: @purple;
 }
 .none {
     color: @orange;
@@ -188,7 +188,7 @@ atom-text-editor.is-focused .line.cursor-line,
 .punctuation.definition.italic,
 .todo.italic {
     font-style: italic;
-    color: @magenta;
+    color: @purple;
 }
 .markup.raw.inline {
     color: @yellow;
@@ -201,90 +201,90 @@ atom-text-editor.is-focused .line.cursor-line,
     color: @orange;
 }
 .markup.list {
-    color: @red;
+    color: @magenta;
 }
 .markup.quote {
     color: @orange;
 }
 .meta.separator {
-    color: @green;
-    background-color: @dark-grey;
+    color: @light-grey;
+    background-color: rgba(30, 52, 69, 1);
 }
 .markup.inserted {
     color: @yellow;
 }
 .markup.deleted {
-    color: @red;
+    color: @magenta;
 }
 .markup.changed {
-    color: @magenta;
+    color: @purple;
 }
 .constant.other.color,
 .meta.property-value .support.constant.named-color.css {
     color: @yellow;
 }
 .string.regexp {
-    color: @green;
+    color: @cyan;
 }
 .constant.character.escape {
     color: @orange;
 }
 .punctuation.section.embedded,
 .variable.interpolation {
-    color: @red;
+    color: @magenta;
 }
 .invalid.illegal {
-    color: white;
+    color: @white;
     background-color: @red;
 }
 .invalid.broken {
-    color: black;
+    color: rgba(2, 14, 20, 1);
     background-color: @orange;
 }
 .invalid.deprecated {
-    color: white;
+    color: @white;
     background-color: @red;
 }
 .invalid.unimplemented {
-    color: white;
+    color: @white;
     background-color: @green;
 }
 .sublimelinter.annotations {
-    color: @dark-grey;
-    background-color: white;
+    color: @grey;
+    background-color: @white;
 }
 .sublimelinter.outline.illegal {
-    color: white;
-    background-color: @magenta;
+    color: @white;
+    background-color: @red;
 }
 .sublimelinter.underline.illegal {
     background-color: @red;
 }
 .sublimelinter.outline.warning {
-    color: white;
+    color: @white;
     background-color: @yellow;
 }
 .sublimelinter.underline.warning {
     background-color: @red;
 }
 .sublimelinter.outline.violation {
-    color: white;
+    color: @white;
     background-color: rgba(255, 255, 255, 0.2);
 }
 .sublimelinter.underline.violation {
     background-color: @red;
 }
 .sublimelinter.mark.error {
-    color: @orange;
+    color: @red;
 }
 .sublimelinter.mark.warning {
     color: @yellow;
 }
 .sublimelinter.gutter-mark {
-    color: white;
+    color: @white;
 }
 .markup.deleted.git_gutter {
-    color: @orange;
+    color: @red;
 }
 .markup.changed.git_gutter {
     color: @yellow;
@@ -303,10 +303,10 @@ atom-text-editor.is-focused .line.cursor-line,
     color: @yellow;
 }
 .support.type.property-name {
-    color: @green;
+    color: @cyan;
 }
 .meta.property-list .meta.property-name {
-    color: @green;
+    color: @cyan;
 }
 .source.css .keyword.other.unit,
 .source.less .keyword.other.unit,
@@ -381,23 +381,9 @@ atom-text-editor.is-focused .line.cursor-line,
 }
 .constant.numeric.line-number.find-in-files:not(.match),
 .text.find-in-files .constant.numeric.line-number.find-in-files {
-    color: @grey;
+    color: @light-grey;
 }
 .entity.name.filename.find-in-files,
 .text.find-in-files .constant.numeric.line-number.match.find-in-files {
     color: @yellow;
-}
-
-atom-text-editor .scroll-view,
-:host .scroll-view {
-  padding-top: 1em;
-}
-
-atom-text-editor .gutter,
-:host .gutter {
-  padding: 1em 0 0 0.5em;
-}
-
-atom-overlay {
-  margin-top: 1em;
 }
