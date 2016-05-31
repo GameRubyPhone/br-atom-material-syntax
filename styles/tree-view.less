@@ -3,27 +3,27 @@ atom-panel-container {
         &:focus {
             li.directory.selected {
                 &.status-modified > .list-item {
-                    color: darken(desaturate(@yellow, 15%), 50%);
+                    color: darken(@yellow, 50%);
                     &::after {
-                        background-color: lighten(desaturate(@yellow, 15%), 5%);
+                        background-color: lighten(@yellow, 5%);
                     }
                 }
                 &.status-added > .list-item {
-                    color: darken(desaturate(@green, 15%), 50%);
+                    color: darken(@green, 50%);
                     &::after {
-                        background-color: lighten(desaturate(@green, 15%), 5%);
+                        background-color: lighten(@green, 5%);
                     }
                 }
                 &.status-renamed > .list-item {
-                    color: darken(desaturate(@blue, 15%), 50%);
+                    color: darken(@blue, 50%);
                     &::after {
-                        background-color: lighten(desaturate(@blue, 15%), 5%);
+                        background-color: lighten(@blue, 5%);
                     }
                 }
                 &.status-removed > .list-item {
-                    color: darken(desaturate(@red, 15%), 50%);
+                    color: darken(@red, 50%);
                     &::after {
-                        background-color: lighten(desaturate(@red, 15%), 5%);
+                        background-color: lighten(@red, 5%);
                     }
                 }
             }
@@ -31,27 +31,27 @@ atom-panel-container {
             li:not(.list-nested-item) {
                 &.selected {
                     &.status-modified {
-                        color: darken(desaturate(@yellow, 15%), 50%);
+                        color: darken(@yellow, 50%);
                         &::before {
-                            background-color: lighten(desaturate(@yellow, 15%), 5%);
+                            background-color: lighten(@yellow, 5%);
                         }
                     }
                     &.status-added {
-                        color: darken(desaturate(@green, 15%), 50%);
+                        color: darken(@green, 50%);
                         &::before {
-                            background-color: lighten(desaturate(@green, 15%), 5%);
+                            background-color: lighten(@green, 5%);
                         }
                     }
                     &.status-renamed {
-                        color: darken(desaturate(@blue, 15%), 50%);
+                        color: darken(@blue, 50%);
                         &::before {
-                            background-color: lighten(desaturate(@blue, 15%), 5%);
+                            background-color: lighten(@blue, 5%);
                         }
                     }
                     &.status-removed {
-                        color: darken(desaturate(@red, 15%), 50%);
+                        color: darken(@red, 50%);
                         &::before {
-                            background-color: lighten(desaturate(@red, 15%), 5%);
+                            background-color: lighten(@red, 5%);
                         }
                     }
                 }
